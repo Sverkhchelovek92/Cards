@@ -12,5 +12,14 @@ function getCards() {
 }
 
 revealBtn.addEventListener('click', () => {
-  getCards()
+  const revealedCards = getCards()
+
+  const cardsContainer = document.getElementById('cards')
+  cardsContainer.innerHTML = ''
+
+  revealedCards.forEach((card) => {
+    const img = document.createElement('img')
+    img.src = `img/${card.file}`
+    cardsContainer.appendChild(img)
+  })
 })
