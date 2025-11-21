@@ -23,10 +23,27 @@ button {
   color: #ed1f37;
   border: 1px solid #ed1f37;
   transition: background-color 0.5s ease;
+  margin-bottom: 15px;
 }
 
 button:hover {
   background-color: #ed1f37;
   color: #121114;
   border: 1px solid white;
+}
+
+#cards {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+#cards img {
+  max-height: 100%;
+  max-width: 25vw;
+  object-fit: contain;
 }
